@@ -67,9 +67,6 @@ body {
     width: 70%;
     height: 73vh;
   }
-  .btns .row {
-    flex-direction: row;
-  }
   .btns .row button {
     width: 3rem;
     height: 1.8rem;

@@ -1,7 +1,74 @@
 //declarations
 var screen = document.querySelector('#screen');
-var btn = document.querySelector('.btn');
+var btn = document.querySelectorAll('.btn');
+//appear pn screen when press a button
+for (item of btn){
+    item.addEventListener('click', (e)=>{
+       btnText = e.target.innerText;
 
-for(item of btn){
+       if(btnText == 'x'){
+        btnText = '*';
+       }
+
+       if(btnText == '÷'){
+         btnText = '/';
+       }
+       
+       screen.value += btnText;
+    });
+}
+
+//trigonometry and other functions
+function sin(){
+     screen.value = Math.sin(screen.value * (Math.PI / 180));
+    
+}
+
+function cos(){
+    screen.value = Math.cos(screen.value * (Math.PI / 180));
+}
+
+function pi(){
+    screen.value  = Math.PI;
+    
+}
+
+function e(){
+    screen.value  = Math.E;
+}
+
+function tan(){
+    screen.value = Math.tan(screen.value * (Math.PI / 180));
+}
+
+function root(){
+    screen.value  = Math.sqrt(screen.value);
+}
+
+function log() {
+    screen.value = Math.log(screen.value);
+}
+
+function pow() {
+    screen.value = Math.pow(screen.value, 2);
+}
+
+function fact(num)
+{
+    var f=1;
+    for (var i = 2; i <= num; i++)
+        f = f * i;
+    screen.value = f;
+}
+    
+    
+
+
+function backsp(){
+    screen.value = screen.value.substr(0,screen.value.length - 1);
+}
+
+function clean(){
+    screen.value  = '';
     
 }

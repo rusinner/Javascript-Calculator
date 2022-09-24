@@ -7,7 +7,7 @@ body{
     min-height: 100vh;
     background: #ecf0f3;
 }
-
+//div contains the app
 .container{
     width: 55%;
     height: 45vh;
@@ -15,7 +15,7 @@ body{
     border-radius: 8px;
     box-shadow: 12px 12px 20px #cbcde1,
                 -12px -12px 20px #ffffff;
-
+//div appears on screen
                 .display{
                     #screen{
                         width: 97%;
@@ -30,7 +30,7 @@ body{
                                     inset -8px -8px 8px #ffffff;
                     }
                 }
-
+//buttons div
                 .btns{
                     width: 100%;
                     margin-top: 1.7em;
@@ -38,6 +38,8 @@ body{
                     justify-content: center;
                     align-items: center;
                     flex-direction: column;
+
+                    //each button separately
                     .row{
                         button{
                         width: 5rem;
@@ -57,7 +59,7 @@ body{
                     }
                 }
 }
-
+//media querries
 @media only screen and (max-width:1120px)  {
     .container{
         width: 60%;
@@ -69,6 +71,54 @@ body{
             button{
                 width: 3.5rem;
                 height: 1.8rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:720px)  {
+    .container{
+        width: 70%;
+        height:73vh ;
+    }
+    .btns{
+        .row{
+            flex-direction: row;
+            button{
+                width: 3rem;
+                height: 1.8rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:520px)  {
+    .container{
+        width: 80%;
+        height:78vh ;
+    }
+    .btns{
+        .row{
+            flex-direction: row;
+            button{
+                width: 2.5rem;
+                height: 1.2rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:300px)  {
+    .container{
+        width: 70%;
+        height:98vh ;
+    }
+    .btns{
+        .row{
+            flex-direction: row;
+            button{
+                width: .5rem;
+                height: .2rem;
             }
         }
     }

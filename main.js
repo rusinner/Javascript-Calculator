@@ -53,17 +53,18 @@ function pow() {
     screen.value = Math.pow(screen.value, 2);
 }
 
-function factorialize(num) {
-    if (num === 0 || num === 1)
-      return 1;
-    for (var i = num - 1; i >= 1; i--) {
-      num *= i;
-      
-
+function fact(){  
+   
+    var i,f,num;
+    f=1;
+    num = screen.value;
+    for(i=1;i<=num;i++){
+        f=f*i;
     }
-    return num;
-  }
-    
+    i=i-1;
+    screen.value=f;
+
+}
     
 
 

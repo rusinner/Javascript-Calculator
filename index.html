@@ -14,12 +14,12 @@
         </div>
         <div class="btns">
             <div class="row">
-                <button onclick="backsp()">CE</button>
-                <button onclick="fact()">x!</button>
+                <button id="ce" onclick="backsp()">CE</button>
+                <button onclick="factorialize()">x!</button>
                 <button class="btn">(</button>
                 <button class="btn">)</button>
                 <button class="btn">%</button>
-                <button onclick="clean()">AC</button>
+                <button id="ac" onclick="clean()">AC</button>
             </div>
 
             <div class="row">
@@ -55,7 +55,7 @@
                 <button class="btn">0</button>
                 <button class="btn">.</button>
                 <!-- apperar the result on screen -->
-                <button onclick="screen.value = eval(screen.value)">=</button>
+                <button id="eval" onclick="screen.value = eval(screen.value)">=</button>
                 <button class="btn">+</button>
             </div>
 
